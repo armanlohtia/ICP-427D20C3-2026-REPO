@@ -37,13 +37,13 @@ Installation and configuration should be completed only for tools that are missi
 
 Record the output of each verification command and mark the tool as installed only after successfully checking it.
 
-| Tool | Status | Notes |
-|---|---|---|
-| Git | Pending verification | |
-| Bash / Linux | Pending verification | |
-| Docker | Pending verification | |
-| Docker Compose | Pending verification | |
-| VS Code | Pending verification | |
+| Tool | Status | 
+|---|---|
+| Git | Installed | 
+| Bash / Linux | Installed | 
+| Docker | Installed | 
+| Docker Compose | Installed | 
+| VS Code | Installed | 
 
 ## 6. Conclusion
 
