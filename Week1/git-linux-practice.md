@@ -130,14 +130,14 @@ git status
 
 Record the commands executed, their outputs, and any errors encountered during practice.
 
-| Exercise | Status | Observations |
-|---|---|---|
-| Directory management | Pending | |
-| File operations | Pending | |
-| File permissions | Pending | |
-| Search and processes | Pending | |
-| Git operations | Pending | |
-| GitHub push | Pending | |
+| Exercise | Status |
+|---|---|
+| Directory management | Done | 
+| File operations | Done | 
+| File permissions | Done | 
+| Search and processes | Done | 
+| Git operations | Done | 
+| GitHub push | Done | 
 
 ## 6. Conclusion
 
