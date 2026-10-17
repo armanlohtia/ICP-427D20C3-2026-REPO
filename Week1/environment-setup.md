@@ -1,50 +1,48 @@
-# Environment Setup Documentation
+# Development Environment Setup
 
-## 1. Objective
+## Operating environment
+- Host OS: Windows
+- Linux environment: Ubuntu through WSL
+- Repository location in WSL:
+  `/mnt/c/Users/Dell/Downloads/Intern/ICP-427D20C3-2026-REPO`
 
-The objective of this document is to record the development environment and verify the tools required for the DevOps internship projects.
-
-## 2. System Information
-
-- Operating System: Windows 10 Pro
-- Terminal: PowerShell / VS Code Terminal
-- Code Editor: Visual Studio Code
-- Version Control: Git and GitHub
-
-## 3. Required Tools
-
-| Tool | Purpose | Verification Command |
-|---|---|---|
-| Git | Version control | `git --version` |
-| Bash / Linux | Shell scripting | `bash --version` |
-| Docker | Containerization | `docker --version` |
-| Docker Compose | Multi-container applications | `docker compose version` |
-| VS Code | Code editing | `code --version` |
-
-## 4. Installation and Configuration
-
-Git is used to track project changes and upload the work to GitHub.
-
-Bash or a Linux environment is required for developing and testing the shell automation script.
-
-Docker is required to build images and run applications in containers.
-
-VS Code is used to create, edit, and organize the project files.
-
-Installation and configuration should be completed only for tools that are missing from the system.
-
-## 5. Verification Results
-
-Record the output of each verification command and mark the tool as installed only after successfully checking it.
-
-| Tool | Status | 
+## Tools identified
+| Tool | Purpose |
 |---|---|
-| Git | Installed | 
-| Bash / Linux | Installed | 
-| Docker | Installed | 
-| Docker Compose | Installed | 
-| VS Code | Installed | 
+| Git | Version control and collaboration |
+| Bash | Linux command-line automation |
+| Python 3 | Application development |
+| Docker Desktop | Container development |
+| Docker Compose | Multi-container application workflows |
+| kubectl | Kubernetes command-line management |
+| Helm | Kubernetes application packaging |
+| Terraform | Infrastructure as code |
+| Ansible | Configuration management |
 
-## 6. Conclusion
+## Environment notes
+- Linux commands and Bash exercises are performed in Ubuntu WSL.
+- Windows-specific commands should be run in PowerShell.
+- Git is used to track changes and maintain project history.
+- Python virtual-environment support may require additional OS packages.
+- Docker CLI and daemon connectivity should be tested before relying on
+  Docker-based project steps.
 
-This document records the environment required for the internship projects. Successful verification of the relevant tools will confirm readiness for development and testing.
+## Known setup issue
+The Docker CLI previously reported that
+`docker-credential-desktop.exe` could not be found in PATH when running
+a container. Python virtual-environment setup also reported missing
+`ensurepip` support.
+
+These issues should be resolved before the projects depend on working
+Docker builds or isolated Python dependencies. Avoid deleting Docker
+data or resetting the installation as a first troubleshooting step.
+
+## Security practices
+- Do not commit secrets or credentials.
+- Keep cloud access restricted to the minimum required.
+- Review resource costs before launching cloud infrastructure.
+- Document installation steps and known limitations.
+
+## Reproducibility
+Before starting a project, record the versions of the tools actually
+used and the commands required to reproduce the environment.

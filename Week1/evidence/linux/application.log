@@ -1,0 +1,7 @@
+2026-10-17 10:01:00 INFO Application started
+2026-10-17 10:02:00 INFO Database connected
+2026-10-17 10:03:00 ERROR Database connection timeout
+2026-10-17 10:03:10 WARN Retrying database connection
+2026-10-17 10:03:20 ERROR Database connection timeout
+2026-10-17 10:04:00 INFO Database connection restored
+2026-10-17 10:05:00 ERROR Request failed with status 500

@@ -1,75 +1,39 @@
-# InternCareerPath DevOps Engineering Internship
+# Proposed DevOps Project Roadmap
 
-## Week 1: Project Selection Document
+These are proposed projects for the internship. Confirm mentor approval if custom or integrated projects require approval under the internship instructions.
 
-### 1. Internship Details
+## Project 1 — Cloud-Native Delivery Platform
 
-- **Organization:** InternCareerPath
-- **Program:** DevOps Engineering Self-Learning Internship
-- **Duration:** 6 Weeks
-- **Repository:** ICP-427D20C3-2026-REPO
+Build a small Python FastAPI task API with automated tests, then introduce delivery and deployment tooling in stages.
 
-### 2. Project 1: Shell Scripting Automation
+**Planned technologies:** Python, FastAPI, pytest, Docker, GitHub Actions, Kubernetes, Helm, Prometheus/Grafana, and optionally Argo CD.
 
-**Problem Statement**
+**Milestones**
+1. Implement a minimal API and automated tests.
+2. Run tests locally and document the results.
+3. Build and run a Docker image.
+4. Add CI checks for tests and image build.
+5. Deploy to a local Kubernetes environment.
+6. Add monitoring and operational instructions if time permits.
 
-Repetitive system administration tasks, such as creating backups and managing logs, can consume time when performed manually. Automating these tasks can improve consistency and reduce human error.
+**Success criteria:** reproducible setup, automated tests, repeatable image build, version-controlled deployment configuration, troubleshooting notes, and cleanup instructions.
 
-**Proposed Solution**
+## Project 2 — Infrastructure Automation
 
-Develop a Bash script that automates directory backups, generates timestamped backup files, records operations in log files, and handles common errors.
+Use Terraform to describe infrastructure and Ansible to automate host configuration. Begin with validation and local or low-cost testing.
 
-**Tools and Technologies**
+**Planned technologies:** Terraform, Ansible, Linux, SSH, Git, and AWS only if budget and credits permit.
 
-- Bash
-- Linux
-- Cron
-- Git and GitHub
+**Milestones**
+1. Validate Terraform configuration and review planned changes.
+2. Automate host configuration using Ansible.
+3. Demonstrate repeatability and idempotency.
+4. Document prerequisites, variables, and teardown.
+5. Verify temporary resources can be safely removed.
 
-**Expected Outcome**
-
-A reusable automation script with error handling, logging, testing instructions, and documentation.
-
-### 3. Project 2: Dockerize an Application
-
-**Problem Statement**
-
-Applications may behave differently across development and deployment environments because their dependencies and configurations differ.
-
-**Proposed Solution**
-
-Package a small application into a Docker image and configure it to run consistently in a container. Optimize the image and document the build and execution process.
-
-**Tools and Technologies**
-
-- Docker
-- Dockerfile
-- Docker Compose
-- Git and GitHub
-
-**Expected Outcome**
-
-A containerized application with documented build instructions, runtime configuration, testing procedures, and troubleshooting guidance.
-
-### 4. Testing Strategy
-
-Both projects will be tested using repeatable procedures.
-
-For Project 1, testing will cover successful backups, invalid paths, logging, and error handling.
-
-For Project 2, testing will cover image building, container startup, application accessibility, configuration, and shutdown.
-
-### 5. Documentation Plan
-
-Each project will include a README, implementation notes, test results, and a runbook explaining how to use and troubleshoot it.
-
-### 6. Completion Criteria
-
-- Both projects are implemented and tested.
-- Instructions allow another user to reproduce the results.
-- Code and documentation are committed to the internship repository.
-- The final repository is reviewed before submission.
-
-### 7. Conclusion
-
-These projects will provide practical experience in Linux automation, containerization, testing, troubleshooting, and technical documentation.
+## Safety and scope
+- Prefer local labs before paid cloud resources.
+- Check billing and expected cost before provisioning.
+- Never commit credentials, tokens, passwords, or private keys.
+- Restrict remote access and do not expose Kubernetes administration endpoints publicly.
+- Prioritise one end-to-end working path over adding every technology.

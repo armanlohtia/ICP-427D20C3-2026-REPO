@@ -1,0 +1,25 @@
+# Incident Investigation Report — Sample Log
+
+## Scenario
+A synthetic application log contains database timeout messages and an HTTP 500 request failure. The objective is to practise log filtering and basic incident reasoning.
+
+## Commands used
+- `wc -l application.log` — counted total log entries.
+- `grep "ERROR" application.log` — displayed error entries.
+- `grep -c "ERROR" application.log` — counted error lines.
+- `awk '{print $3}' application.log | sort -u` — extracted distinct log levels.
+- `grep "ERROR" application.log > errors.log` — saved matching entries to a separate file.
+- `tail -3 application.log` — inspected the last three events.
+
+## Findings
+- Total log entries: 7.
+- Error entries: 3.
+- Distinct log levels: ERROR, INFO, WARN.
+- Two entries report database connection timeouts.
+- A later entry reports a request failure with status 500.
+
+## Interpretation
+The sample shows the order of events, but it does not prove the root cause. A real investigation would correlate application logs with database logs, metrics, network status, deployment changes, and request traces.
+
+## Lesson
+Filter and preserve relevant evidence before changing the system. Distinguish observed facts from hypotheses.
